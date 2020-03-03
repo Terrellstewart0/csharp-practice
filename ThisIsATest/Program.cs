@@ -7,7 +7,7 @@ namespace ThisIsATest
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello Bitches!");
+            Console.WriteLine("Hello Wonderful people!");
             // This is how you make comments in the terminal
 
 
@@ -63,6 +63,7 @@ namespace ThisIsATest
             //Console.WriteLine(b);
             //Example
 
+            Console.WriteLine("Great work up till now! We will continue working!");
 
 
         }
