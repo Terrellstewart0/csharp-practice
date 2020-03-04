@@ -6,8 +6,8 @@ namespace ThisIsATest
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello Wonderful people!");
+            //Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello Wonderful people!");
             // This is how you make comments in the terminal
 
 
@@ -64,6 +64,39 @@ namespace ThisIsATest
             //Example
 
             Console.WriteLine("Great work up till now! We will continue working!");
+
+            //int x = 1;
+            //while (x++ < 5)
+            //{
+            //    if (x % 2 == 0)
+            //        x += 2;
+            //    Console.WriteLine(x);
+            //}
+            //Console.WriteLine(x);
+            //This is the structure of a while loop
+
+            //for (int x = 1; x < 100; x++)
+            //{
+            //    Console.Write(" {0} ", x);
+            //}
+
+            //This is the basic structure for a for loop
+
+            for (int x = 1; x< 100; x++)
+            {
+                if (x % 15 == 0)
+                    Console.WriteLine("FizzBuzz");
+                else if (x % 5 == 0)
+                    Console.WriteLine("buzz");
+                else if (x % 3 == 0)
+                    Console.WriteLine("Fizz");
+                else
+                    Console.WriteLine(x);
+
+            };
+            //Fizz buzz! 
+
+
 
 
         }
