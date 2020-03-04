@@ -4,6 +4,11 @@ namespace Practice
 {
     class MainClass
     {
+        static void SayHi()
+        {
+            Console.WriteLine("Hello my dudes");
+        }
+
         public static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
@@ -82,23 +87,83 @@ namespace Practice
 
             //This is the basic structure for a for loop
 
-            for (int x = 1; x< 100; x++)
+            //for (int x = 1; x < 100; x++)
+            //{
+            //	if (x % 15 == 0)
+            //		Console.WriteLine("FizzBuzz");
+            //	else if (x % 5 == 0)
+            //		Console.WriteLine("buzz");
+            //	else if (x % 3 == 0)
+            //		Console.WriteLine("Fizz");
+            //	else
+            //		Console.WriteLine(x);
+
+            //};
+            //Fizz buzz!
+
+
+            //int x = 0;
+            //do
+            //{
+            //    Console.WriteLine("{0}", x);
+            //    x++;
+            //} while (x < 100);
+
+            //int y = 100;
+            //do
+            //{
+            //    Console.WriteLine("{0}", y);
+            //    y -= 1;
+            //} while (y > 0);
+            //Building an up and down from too and from 100 with do while loops
+
+
+            //for (int x = 1; x < 50; x++)
+            //{
+            //    if (x % 2 == 0) 
+            //    continue;
+
+            //    Console.WriteLine(x);
+            //}
+            //using continue to only count odds in a loop
+
+            //int meaning = 42;
+            //String output;
+            //output = (meaning == 42)? "bogon poetry for you!": "thanks for all the fish.";
+            //Console.WriteLine(output);
+            //Testing out the ?
+
+
+            //Console.WriteLine("what number do you want to add?");
+
+            //var x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(" What other number do you want to add?");
+            //var y = Convert.ToInt32(Console.ReadLine());
+
+            //var message = (x + y);
+            //Console.WriteLine("Those added together are {0}",message);
+            //Tiny calculator
+
+          
+
+           
             {
-                if (x % 15 == 0)
-                    Console.WriteLine("FizzBuzz");
-                else if (x % 5 == 0)
-                    Console.WriteLine("buzz");
-                else if (x % 3 == 0)
-                    Console.WriteLine("Fizz");
-                else
-                    Console.WriteLine(x);
+                SayHi();
+                SayHi();
+                //Working with methods and how to implement them. 
 
-            };
-            //Fizz buzz! 
-
-
-
+            }
 
         }
+        //public static void sayHi()
+        //{
+        //    Console.WriteLine("howdy yall");
+        //}
+        //sayHi();
+
+
+
+
+
     }
 }
