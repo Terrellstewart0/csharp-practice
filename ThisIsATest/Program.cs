@@ -8,9 +8,30 @@ namespace Practice
         {
             Console.WriteLine("Hello my dudes");
         }
+        static void num(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+        static int Sum(int x, int y)
+        {
+            return x + y;
+        }
+        static int Vol(int x, int y = 3, int z = 1)
+        {
+            return x * y * z;
+        }
+        static int Area(int height, int width)
+        {
+            return height * width;
+        }
 
+        
         public static void Main(string[] args)
         {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
             //Console.WriteLine("Hello World!");
             //Console.WriteLine("Hello Wonderful people!");
             // This is how you make comments in the terminal
@@ -144,15 +165,17 @@ namespace Practice
             //Console.WriteLine("Those added together are {0}",message);
             //Tiny calculator
 
-          
 
-           
-            {
-                SayHi();
-                SayHi();
+
+            Console.WriteLine(Area(height: 3,width: 3));
+            //Console.WriteLine(Vol(2, 4));
+            //SayHi();
+            //    Console.WriteLine(Sum(7, 3));
+            //    num(-10, 10);
+            //    SayHi();
                 //Working with methods and how to implement them. 
 
-            }
+            
 
         }
         //public static void sayHi()
