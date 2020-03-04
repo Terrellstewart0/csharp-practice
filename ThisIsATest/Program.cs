@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ThisIsATest
+namespace Practice
 {
     class MainClass
     {
