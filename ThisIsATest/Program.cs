@@ -4,6 +4,18 @@ namespace Practice
 {
     class MainClass
     {
+        class TryingOut
+        {
+           public int age;
+           public String name;
+           public void howdy()
+            {
+                Console.WriteLine("Howdy Partner");
+            }
+            //working with classes and and objects
+        }
+
+
         static void SayHi()
         {
             Console.WriteLine("Hello my dudes");
@@ -29,16 +41,73 @@ namespace Practice
         {
            return x += x;
         }
+        //static void Print(int a)
+        //{
+        //    Console.WriteLine("Value: " + a);
+        //}
+        //static void Print(double a)
+        //{
+        //    Console.WriteLine("Value: " + a);
+        //}
+        //static void Print(string label, double a)
+        //{
+        //    Console.WriteLine(label + a);
+        //}
+
+        static void Print(int a)
+        {
+            Console.WriteLine(a * a);
+        }
+        static void Print(double a)
+        {
+            Console.WriteLine(a + a);
+        }
+
+        static void DrawPyramid(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = i; j <= n; j++)
+                {
+                    Console.Write("  ");
+                }
+                for (int k = 1; k <= 2 * i - 1; k++)
+                {
+                    Console.Write("*" + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static int Test(out int x, int y = 4)
+        {
+            x = 6;
+            return x * y;
+        }
+       
+     
+
 
         public static void Main(string[] args)
         {
             if (args is null)
             {
                 throw new ArgumentNullException(nameof(args));
-            }
-            int a = 5;
+             }
+           
 
-            Console.WriteLine(Maths(a));
+
+            TryingOut tO = new TryingOut();
+            tO.howdy();
+            tO.name = "wade";
+            Console.WriteLine(tO.name);
+            
+
+        Print(3);
+            DrawPyramid(5);
+            //int a = 5;
+
+            //Console.WriteLine(Maths(a));
 
 
             //Console.WriteLine("Hello World!");
@@ -198,4 +267,15 @@ namespace Practice
 
 
     }
+    //class secondClass
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        if (args is null)
+    //        {
+    //            throw new ArgumentNullException(nameof(args));
+    //        }
+
+    //    }
+    //}
 }
