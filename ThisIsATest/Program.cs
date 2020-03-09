@@ -25,13 +25,22 @@ namespace Practice
             return height * width;
         }
 
-        
+        static int Maths(int x)
+        {
+           return x += x;
+        }
+
         public static void Main(string[] args)
         {
             if (args is null)
             {
                 throw new ArgumentNullException(nameof(args));
             }
+            int a = 5;
+
+            Console.WriteLine(Maths(a));
+
+
             //Console.WriteLine("Hello World!");
             //Console.WriteLine("Hello Wonderful people!");
             // This is how you make comments in the terminal
@@ -167,15 +176,15 @@ namespace Practice
 
 
 
-            Console.WriteLine(Area(height: 3,width: 3));
+            //Console.WriteLine(Area(height: 3,width: 3));
             //Console.WriteLine(Vol(2, 4));
             //SayHi();
             //    Console.WriteLine(Sum(7, 3));
             //    num(-10, 10);
             //    SayHi();
-                //Working with methods and how to implement them. 
-
+            //Working with methods and how to implement them.
             
+
 
         }
         //public static void sayHi()
