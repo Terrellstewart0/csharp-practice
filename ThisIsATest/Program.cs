@@ -6,8 +6,18 @@ namespace Practice
     {
         class TryingOut
         {
-           public int age;
-           public String name;
+           private int Age = 4767;
+            public int GetAge()
+            {
+                return Age;
+            }
+
+           private String name = "gregor";
+         
+            public String GetName()
+            {
+                return name;
+            }
            public void howdy()
             {
                 Console.WriteLine("Howdy Partner");
@@ -15,6 +25,16 @@ namespace Practice
             //working with classes and and objects
         }
 
+       class howdy
+        {
+            private String hello;
+            public String HowDo {
+                get { return hello; }
+                set { hello = value; }
+
+            }
+
+        }
 
         static void SayHi()
         {
@@ -94,13 +114,16 @@ namespace Practice
             {
                 throw new ArgumentNullException(nameof(args));
              }
-           
 
+            howdy yo = new howdy();
+            yo.HowDo = "Howdy to everyone from the great state of texas!";
+            Console.WriteLine(yo.HowDo);
 
-            TryingOut tO = new TryingOut();
-            tO.howdy();
-            tO.name = "wade";
-            Console.WriteLine(tO.name);
+            //TryingOut tO = new TryingOut();
+            //tO.howdy();
+
+            //Console.WriteLine(tO.GetAge());
+            //Console.WriteLine(tO.GetName());
             
 
         Print(3);
